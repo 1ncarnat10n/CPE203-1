@@ -1,0 +1,81 @@
+blacksmith images/blacksmith.bmp
+blob images/blob1.bmp 255 255 255 0
+blob images/blob2.bmp 255 255 255 0
+blob images/blob3.bmp 255 255 255 0
+blob images/blob4.bmp 255 255 255 0
+blob images/blob5.bmp 255 255 255 0
+blob images/blob6.bmp 255 255 255 0
+blob images/blob7.bmp 255 255 255 0
+blob images/blob8.bmp 255 255 255 0
+blob images/blob9.bmp 255 255 255 0
+blob images/blob10.bmp 255 255 255 0
+blob images/blob11.bmp 255 255 255 0
+blob images/blob12.bmp 255 255 255 0
+grass images/grass.bmp
+miner images/miner1.bmp 252 252 252 0
+miner images/miner2.bmp 252 252 252 0
+miner images/miner3.bmp 252 252 252 0
+miner images/miner4.bmp 252 252 252 0
+miner images/miner5.bmp 252 252 252 0
+obstacle images/obstacle.bmp
+ore images/ore.bmp 201 26 26 0
+quake images/quake1.bmp 255 255 255 0
+quake images/quake2.bmp 255 255 255 0
+quake images/quake3.bmp 255 255 255 0
+quake images/quake4.bmp 255 255 255 0
+quake images/quake5.bmp 255 255 255 0
+quake images/quake6.bmp 255 255 255 0
+rocks images/rock.bmp
+vein images/vein.bmp
+background_default images/none.bmp
+portal images/portal1.bmp 255 255 255 0
+portal images/portal2.bmp 255 255 255 0
+portal images/portal3.bmp 255 255 255 0
+portal images/portal4.bmp 255 255 255 0
+portal images/portal5.bmp 255 255 255 0
+portal images/portal6.bmp 255 255 255 0
+portal_steps images/portal_steps.bmp
+enemy_healer images/enemyHealer1.bmp 255 255 255 0
+enemy_healer images/enemyHealer2.bmp 255 255 255 0
+enemy_healer images/enemyHealer3.bmp 255 255 255 0
+enemy_healer images/enemyHealer4.bmp 255 255 255 0
+enemy_healer images/enemyHealer5.bmp 255 255 255 0
+enemy_healer images/enemyHealer6.bmp 255 255 255 0
+enemy_healer images/enemyHealer7.bmp 255 255 255 0
+enemy_healer images/enemyHealer8.bmp 255 255 255 0
+enemy_healer images/enemyHealer9.bmp 255 255 255 0
+enemy_healer images/enemyHealer10.bmp 255 255 255 0
+enemy_healer images/enemyHealer11.bmp 255 255 255 0
+enemy_healer images/enemyHealer12.bmp 255 255 255 0
+wyvern images/wyvern1.bmp 255 255 255 0
+wyvern images/wyvern2.bmp 255 255 255 0
+wyvern images/wyvern3.bmp 255 255 255 0
+wyvern images/wyvern4.bmp 255 255 255 0
+wyvern images/wyvern5.bmp 255 255 255 0
+wyvern images/wyvern6.bmp 255 255 255 0
+wyvern images/wyvern7.bmp 255 255 255 0
+wyvern images/wyvern8.bmp 255 255 255 0
+ninja images/ninja1.bmp 255 255 255 0
+ninja images/ninja2.bmp 255 255 255 0
+ninja images/ninja3.bmp 255 255 255 0
+ninja images/ninja4.bmp 255 255 255 0
+ninja images/ninja5.bmp 255 255 255 0
+ninja images/ninja6.bmp 255 255 255 0
+ninja images/ninja7.bmp 255 255 255 0
+ninja images/ninja8.bmp 255 255 255 0
+ninja images/ninja9.bmp 255 255 255 0
+ninja images/ninja10.bmp 255 255 255 0
+ninja images/ninja11.bmp 255 255 255 0
+ninja images/ninja12.bmp 255 255 255 0
+ninja images/ninja13.bmp 255 255 255 0
+ninja images/ninja14.bmp 255 255 255 0
+ninja images/ninja15.bmp 255 255 255 0
+ninja images/ninja16.bmp 255 255 255 0
+ninja images/ninja17.bmp 255 255 255 0
+ninja images/ninja18.bmp 255 255 255 0
+ninja images/ninja19.bmp 255 255 255 0
+ninja images/ninja20.bmp 255 255 255 0
+ninja images/ninja21.bmp 255 255 255 0
+ninja images/ninja22.bmp 255 255 255 0
+ninja images/ninja23.bmp 255 255 255 0
+ninja images/ninja24.bmp 255 255 255 0

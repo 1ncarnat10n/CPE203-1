@@ -1,0 +1,224 @@
++getCurrentImage(): PImage => Entity & Background
+This method takes an object and contains an if else block which checks whethen the passed in obect is a background or entity. This method was moved to the entity and background class because it only runs on the object it is called on if it is a background or entity.
+
++getAnimationPeriod(): int => Entity
+This method was moved to the entity class because it took only an entity and acted on the entity it is called on.
+
++nextImage() => Entity
+This method was moved to the entity class because it took only an entity and acted on the entity it is called on.
+
+-executeAction() => Action
+This method was moved to the action class because it only runs on an single action based on its type.
+
+-executeAnimationAction() => Action
+This method was moved to the entity class because it took only an entity and acted on the entity it is called on. This was made private since it is called through executeAction().
+
+-executeActivityAction() => Action
+This method was moved to the entity class because it took only an entity and acted on the entity it is called on. This was made private since it is called through executeAction().
+
+-executeMinerFullActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
+-executeMinerNotFullActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
+-executeOreActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
+-executeOreBlobActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
+-executeQuakeActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
+-executeVeinActivity() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though executeActivityAction().
+
++scheduleActions() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is called though each entity's execute*Activity method.
+
+-transformNotFull(): boolean => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-transformFull() => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-moveToNotFull(): boolean => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-moveToFull(): boolean => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-moveToOreBlob(): boolean => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-nextPositionMiner(): Point => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
+-nextPositionOreBlob(): Point => Entity
+This method was moved to the entity class because it took only an entity and performed the entity's actions. This was made private since this method is an action of the entity which is called through the entity's execute*Activity method.
+
++adjacent(): boolean => Point
+This method was moved to the point class because it performs an action between that point and another point. This was made private since this method is an action of the various entity's actions.
+
++findOpenAround(): Optional<Point> => WorldModel
+This method was moved to the WorldModel class because it takes a worldModel object and performed actions for objects linked to this object in some way.
+
++scheduleEvent() => EventScheduler
+This method was moved to the EventScheduler class because it interacts with the event scheduler directly.
+
++unscheduleAllEvents() => EventScheduler
+This method was moved to the EventScheduler class because it interacts with the event scheduler directly.
+
++removePendingEvent() => EventScheduler
+This method was moved to the EventScheduler class because it interacts with the event scheduler directly.
+
++updateOnTime() => EventScheduler
+This method was moved to the EventScheduler class because it interacts with the event scheduler directly.
+
++getImageList(): List<PImage> => ImageStore
+This was moved to the image store class because it is a getter method.
+
++loadImages() => ImageStore
+This was moved to the image store class because it interacts with the class directly.
+
+-processImageLine() => ImageStore
+This was moved to the image store class because it is called on images in the image store. This is made private since it is a helper method for loadImages.
+
++getImages(): List<PImage> => ImageStore
+This was moved to the image store class because it is a getter method.
+
+-setAlpha() => ImageStore
+This was moved to the image store class because it is called on images in the image store. This is made private since it is a helper method for loadImages.
+
+-shift() => Viewport
+This was moved to the viewport class since it interacts with the viewport directly. This was made private since it is a helper method for shiftView.
+
++contains(): boolean => Viewport
+This was moved to the viewport class since it is an 'action' for the viewport. 
+
++load() => WorldModel
+This was moved to the world model class since it calls parsing methods which interact with the world model.
+
+-processLine(): boolean => WorldModel
+This was moved to the world model class since it is a helper method for the load method.
+
++parseBackground(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++parseMiner(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++parseObstacle(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++parseOre(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++parseSmith(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++parseVein(): boolean => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++tryAddEntity() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++withinBounds(): boolean => WorldModel
+This was moved to the world model class since it is a helper method for adding entities and setting images for the world.
+
++isOccupied(): boolean => WorldModel
+This was moved to the world model class since it is a helper method for adding entities to the world.
+
++nearestEntity(): Optional<Entity> => Point
+This was moved to the point class since it acts on a point and a list of entities.
+
+-distanceSquared(): int => Point
+This was moved to the point class since it acts on the point and another point. This was made private since it is a helper method for the isoccupied method
+
++findNearest(): Optional<Entity> => Point
+This was moved to the workd model class since it is used to find entities in relation to a point.
+
++addEntity() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++moveEntity() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++removeEntity() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++removeEntityAt() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++getBackgroundImage(): Optional<PImage> => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++setBackground() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++getOccupant(): Optional<Entity> => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++getOccupancyCell(): Entity => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++setOccupancyCell() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++getBackgroundCell(): Background => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++setBackgroundCell() => WorldModel
+This was moved to the world model class since it interacts with the world model by setting/adding objects.
+
++viewportToWorld(): Point => Viewport
+This was moved to the viewport class since it is used exclusively on the viewport.
+
++worldToViewport(): Point => WorldModel
+This was moved to the world model class since it is used exclusively on the world.
+
++clamp() => Point => Point
+This was added to the point class as a static method since I didn't know where else to put it.
+
++shiftView() => WorldView
+This was moved to the world view class since it is used to directly interact with the world view obect.
+
++drawBackground() => WorldView
+This was moved to the world view class since it is used to directly interact with the world view obect.
+
++drawEntities() => WorldView
+This was moved to the world view class since it is used to directly interact with the world view obect.
+
++drawViewport() => WorldView
+This was moved to the world view class since it is used to directly interact with the world view obect.
+
+-createAnimationAction(): Action => Entity
+This was moved to the entity class since it is a action method for the entity it is called on. This was made private since it is called exclusivly within each entity's action methods.
+
+-createActivityAction(): Action => Entity
+This was moved to the entity class since it is a action method for the entity it is called on. This was made private since it is called exclusivly within each entity's action methods.
+
++createBlacksmith(): Entity => Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createMinerFull(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createMinerNotFull(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createObstacle(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createOre(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createOreBlob(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createQuake(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
+
++createVein(): Entity
+This was moved to the entity class since it is used to create new entity object. This is a static method.
